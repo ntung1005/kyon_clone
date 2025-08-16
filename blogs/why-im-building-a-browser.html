@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<!-- saved from url=(0047)https://kyon.dev/blog/why-im-building-a-browser -->
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en" dir="ltr">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+    <meta name="generator" content="pandoc" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, user-scalable=yes"
+    />
+
+    <!-- Favicons with sizes -->
+    <link
+      rel="icon"
+      type="image/x-icon"
+      href="https://kyon.dev/static/favicon.ico"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="https://kyon.dev/static/favicon-16x16.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="https://kyon.dev/static/favicon-32x32.png"
+    />
+
+    <!-- Meta tags -->
+    <meta name="author" content="0xkyon" />
+    <meta name="dcterms.date" content="2024-11-08" />
+
+    <!-- Preload important images -->
+    <link
+      rel="preload"
+      as="image"
+      href="https://kyon.dev/static/banner/banner.webp"
+      type="image/webp"
+      fetchpriority="high"
+    />
+    <link
+      rel="preload"
+      as="image"
+      href="./../kyon_files/blog_files/kyon_pfp.webp"
+      type="image/webp"
+      fetchpriority="high"
+    />
+
+    <!-- Open Graph tags -->
+    <meta
+      property="og:image"
+      content="https://kyon.dev/static/og//blog/why-im-building-a-browser/og.jpg"
+    />
+    <meta property="og:image:alt" content="why i’m building a browser" />
+    <meta property="og:title" content="why i’m building a browser" />
+    <meta property="og:type" content="website" />
+    <meta
+      property="og:url"
+      content="https://kyon.dev/blog/why-im-building-a-browser"
+    />
+    <meta property="og:site_name" content="kyon.dev" />
+
+    <!-- Twitter Card tags -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta
+      name="twitter:image"
+      content="https://kyon.dev/static/og//blog/why-im-building-a-browser/og.jpg"
+    />
+    <meta name="twitter:title" content="why i’m building a browser" />
+    <meta name="twitter:site" content="https://kyon.dev" />
+    <meta name="twitter:creator" content="@0xkyon" />
+
+    <!-- SEO -->
+    <meta http-equiv="content-language" content="en-us" />
+    <meta name="robots" content="index, follow" />
+    <title>why i’m building a browser - kyon's blog</title>
+    <link
+      rel="canonical"
+      href="https://kyon.dev/blog/why-im-building-a-browser"
+    />
+
+    <!-- Mobile Web App -->
+    <meta name="mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-title" content="kyon.dev" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="./../kyon_files/blog_files/reset.css" />
+    <link rel="stylesheet" href="./../kyon_files/blog_files/index.css" />
+
+    <!-- Schema.org -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "BlogPosting",
+        "headline": "why i’m building a browser",
+        "author": {
+          "@type": "Person",
+          "name": "0xkyon",
+          "url": "https://kyon.dev",
+          "sameAs": ["https://twitter.com/0xkyon"]
+        },
+        "datePublished": "2024-11-08",
+        "dateModified": "2024-11-08",
+        "publisher": {
+          "@type": "Person",
+          "name": "0xkyon",
+          "url": "https://kyon.dev"
+        },
+        "url": "https://kyon.dev"
+      }
+    </script>
+  </head>
+
+  <body data-new-gr-c-s-check-loaded="14.1248.0" data-gr-ext-installed="">
+    <table class="header" style="border: none">
+      <tbody>
+        <tr>
+          <td
+            colspan="4"
+            class="banner"
+            style="
+              border: none;
+              height: 100px;
+              background-size: cover;
+              background-position: center;
+              background-image: url(&#39;/static/banner/banner.webp&#39;);
+            "
+          ></td>
+        </tr>
+        <tr>
+          <td
+            rowspan="3"
+            class="width-min"
+            style="
+              width: 120px;
+              padding-top: -60px;
+              vertical-align: top;
+              border: none;
+            "
+          >
+            <div
+              class="pfp off-grid"
+              style="
+                width: 120px;
+                height: 120px;
+                border-radius: 60px;
+                border: 6px solid black;
+                overflow: hidden;
+                margin-top: -60px;
+              "
+              data-off-grid-logged="true"
+            >
+              <img
+                style="
+                  width: 100%;
+                  height: 115.14px;
+                  object-fit: cover;
+                  background-color: black !important;
+                  min-height: 50px;
+                "
+                alt=""
+                data-src="/static/banner/kyon_pfp.webp"
+                loading="lazy"
+                class="off-grid"
+                data-off-grid-logged="true"
+                src="./../kyon_files/blog_files/kyon_pfp.webp"
+              />
+            </div>
+          </td>
+          <td
+            colspan="2"
+            class="width-auto"
+            style="text-align: left; border: none"
+          >
+            <h1 class="title off-grid" data-off-grid-logged="true">
+              why i’m building a browser
+            </h1>
+            <span
+              class="subtitle off-grid"
+              style="font-size: 85%; color: gray; font-style: italic"
+              data-off-grid-logged="true"
+              >published on 2024-11-08 by
+              <a
+                href="https://kyon.dev/"
+                style="text-decoration: none; color: gray"
+                class="off-grid"
+                data-off-grid-logged="true"
+                >kyon</a
+              >
+            </span>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+
+    <!-- Blog Post Date -->
+
+    <h2 id="okay.-why" class="off-grid" data-off-grid-logged="true">
+      okay. why?
+    </h2>
+    <p class="off-grid" data-off-grid-logged="true">
+      im making a browser because i want to spend less time navigating and more
+      time absorbing data.
+    </p>
+    <p class="off-grid" data-off-grid-logged="true">
+      i browse the internet. all the time. i am chronically online.
+    </p>
+    <p class="off-grid" data-off-grid-logged="true">
+      the most amount of time is spent on researching (no, not that kind of
+      research)
+    </p>
+    <h3 id="section" class="off-grid" data-off-grid-logged="true">
+      <a
+        href="https://x.com/0xKyon/status/1845599571587854731"
+        class="off-grid"
+        data-off-grid-logged="true"
+        >2024-10-13</a
+      >
+    </h3>
+    <ul class="incremental off-grid" data-off-grid-logged="true">
+      <li class="off-grid" data-off-grid-logged="true">github (code search)</li>
+      <li class="off-grid" data-off-grid-logged="true">
+        arxiv + gscholar (keyword search)
+      </li>
+      <li class="off-grid" data-off-grid-logged="true">
+        google (date + keyword + file)
+      </li>
+      <li class="off-grid" data-off-grid-logged="true">reddit (algolia)</li>
+      <li class="off-grid" data-off-grid-logged="true">
+        x dot com (broken search)
+      </li>
+      <li class="off-grid" data-off-grid-logged="true">
+        chatgpt (domain exploration)
+      </li>
+    </ul>
+    <figure class="off-grid" data-off-grid-logged="true">
+      <img
+        alt="how i research:"
+        data-src="https://pbs.twimg.com/media/GZzjBudaQAAJXk-.jpg"
+        loading="lazy"
+        class="off-grid"
+        data-off-grid-logged="true"
+        style="min-height: 50px; height: 307.04px"
+        src="./../kyon_files/blog_files/GZzjBudaQAAJXk-.jpg"
+      />
+      <figcaption
+        aria-hidden="true"
+        class="off-grid"
+        data-off-grid-logged="true"
+      >
+        how i research:
+      </figcaption>
+    </figure>
+    <p class="off-grid" data-off-grid-logged="true">
+      my browser ends up looking like this:
+    </p>
+    <p class="off-grid" data-off-grid-logged="true">
+      tabs so small you can only see their favicons. this is a terrible
+      experience. and it’s not just about ui, this
+      <em class="off-grid" data-off-grid-logged="true">slows me down</em> and
+      software should never do that.
+    </p>
+    <h2 id="skill-issue" class="off-grid" data-off-grid-logged="true">
+      skill issue
+    </h2>
+    <p class="off-grid" data-off-grid-logged="true">
+      yes, i browse the internet differently. maybe i am an edge case? i have
+      asked myself this: if there’s enough of me then why aren’t there good
+      enough solutions yet?
+    </p>
+    <p class="off-grid" data-off-grid-logged="true">
+      well, there are. it’s just they aren’t really great. they aren’t even good
+      tbh.
+    </p>
+    <p class="off-grid" data-off-grid-logged="true">
+      i have concluded that this is probably because
+      <em class="off-grid" data-off-grid-logged="true"
+        >building browsers is extremely hard</em
+      >
+      you’re basically building virtualization software to run an operating
+      system for the internet
+    </p>
+    <p class="off-grid" data-off-grid-logged="true">
+      the modern web is a mess, it’s plethora of badly defined specs and
+      esoteric rulesets which almost nobody follow 100% of the time
+    </p>
+    <p class="off-grid" data-off-grid-logged="true">
+      and if they do, just wait until w3 decides to rule out your usage of h1
+      tags and condemn your blasphemy
+    </p>
+    <p class="off-grid" data-off-grid-logged="true">
+      it’s tough, open source efforts to make browser engines have been mostly
+      failures with almost nobody having the levels of autism in their teams
+      peaking enough to cross feature parity lines with the likes of chromium
+      and webkit
+    </p>
+    <p class="off-grid" data-off-grid-logged="true">
+      so no, don’t make a browser engine (unless you’re hearing voices)
+    </p>
+    <h2 id="how" class="off-grid" data-off-grid-logged="true">how</h2>
+    <p class="off-grid" data-off-grid-logged="true">
+      so how do we build a browser if we can’t build a browser? don’t reinvent
+      the wheel, use an existing engine
+    </p>
+    <p class="off-grid" data-off-grid-logged="true">
+      modern browser engines are considerably fast. you want to do it in rust?
+      good luck with the next 10yrs of your life.
+    </p>
+    <p class="off-grid" data-off-grid-logged="true">
+      i didn’t take the saner route, i first tried c (sokol + ultralight) and
+      then rust (iced + servo) and then rust again (iced + ultralight + turin
+      &amp; turin + native webview combo)
+    </p>
+    <p class="off-grid" data-off-grid-logged="true">
+      for many reasons which i do not care to explain here, i find the stack
+      extremely lacking both in terms of dev ex and more importantly purpose
+      driven smaller engines cannot deliver the full breadth of features the web
+      has to offer
+    </p>
+    <p class="off-grid" data-off-grid-logged="true">
+      the worst thing i could do is work on a browser that couldn’t support the
+      pages i wanted to view for some obscure reason.
+    </p>
+    <p class="off-grid" data-off-grid-logged="true">
+      so i went with the stack god intended for browser dev, i chose
+      <em class="off-grid" data-off-grid-logged="true">electron</em>. it’s
+      simple, it’s already chromium all i need to add is the ux.
+    </p>
+    <p class="off-grid" data-off-grid-logged="true">
+      many opponents of electron lament over security for them i say: skill
+      issue.
+    </p>
+    <p class="off-grid" data-off-grid-logged="true">
+      note: using native
+      <webview class="off-grid" data-off-grid-logged="true">
+        can be secure you just need to do basic opsec note 2: i’m making this
+        for myself, don’t use it if you’re scared.</webview
+      >
+    </p>
+    <h2 id="progress" class="off-grid" data-off-grid-logged="true">progress</h2>
+    <p class="off-grid" data-off-grid-logged="true">
+      i’m still actively working on it, for live updates you can check out my
+      posts on
+      <a
+        href="https://x.com/0xkyon"
+        class="off-grid"
+        data-off-grid-logged="true"
+        >x</a
+      >
+      or the much slower updates
+      <a
+        href="https://kyon.dev/projects/browser"
+        class="off-grid"
+        data-off-grid-logged="true"
+        >here</a
+      >
+    </p>
+
+    <script src="./../kyon_files/blog_files/index.js"></script>
+  </body>
+  <grammarly-desktop-integration data-grammarly-shadow-root="true"
+    ><template shadowrootmode="open"
+      ><style>
+        div.grammarly-desktop-integration {
+          position: absolute;
+          width: 1px;
+          height: 1px;
+          padding: 0;
+          margin: -1px;
+          overflow: hidden;
+          clip: rect(0, 0, 0, 0);
+          white-space: nowrap;
+          border: 0;
+          -moz-user-select: none;
+          -webkit-user-select: none;
+          -ms-user-select: none;
+          user-select: none;
+        }
+
+        div.grammarly-desktop-integration:before {
+          content: attr(data-content);
+        }
+      </style>
+      <div
+        aria-label="grammarly-integration"
+        role="group"
+        tabindex="-1"
+        class="grammarly-desktop-integration"
+        data-content='{"mode":"full","isActive":true,"isUserDisabled":false}'
+      ></div></template
+  ></grammarly-desktop-integration>
+</html>

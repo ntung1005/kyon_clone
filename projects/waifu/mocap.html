@@ -1,0 +1,435 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en" dir="ltr">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+    <meta name="generator" content="pandoc" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, user-scalable=yes"
+    />
+
+    <link
+      rel="icon"
+      type="image/x-icon"
+      href="https://kyon.dev/static/favicon.ico"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="https://kyon.dev/static/favicon-16x16.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="https://kyon.dev/static/favicon-32x32.png"
+    />
+
+    <meta name="theme-color" content="#ffffff" />
+    <meta name="color-scheme" content="light dark" />
+
+    <meta property="og:site_name" content="" />
+    <meta
+      property="og:image"
+      content="https://kyon.dev/static/og//projects/waifu/mocap/og.jpg"
+    />
+    <meta property="og:image:alt" content="Video to Motion" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:title" content="Video to Motion" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://kyon.dev/projects/waifu/mocap" />
+
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta
+      name="twitter:image"
+      content="https://kyon.dev/static/og//projects/waifu/mocap/og.jpg"
+    />
+    <meta name="twitter:title" content="Video to Motion" />
+    <meta name="twitter:site" content="https://kyon.dev" />
+    <meta name="twitter:creator" content="@0xkyon" />
+
+    <title>Video to Motion</title>
+    <link rel="canonical" href="https://kyon.dev/projects/waifu/mocap" />
+    <meta name="robots" content="index, follow" />
+    <meta name="googlebot" content="index, follow" />
+
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+    <meta name="apple-mobile-web-app-title" content="" />
+    <meta name="mobile-web-app-capable" content="yes" />
+    <meta name="application-name" content="" />
+
+    <link rel="stylesheet" href="./../../kyon_files/project_files/reset.css" />
+    <link rel="stylesheet" href="./../../kyon_files/project_files/index.css" />
+  </head>
+
+  <body data-new-gr-c-s-check-loaded="14.1248.0" data-gr-ext-installed="">
+    <table class="header" style="border: none">
+      <tbody>
+        <tr>
+          <td
+            colspan="4"
+            class="banner"
+            style="
+              border: none;
+              height: 100px;
+              background-size: cover;
+              background-position: center;
+              background-image: url(&#39;/static/banner/banner.webp&#39;);
+            "
+          ></td>
+        </tr>
+        <tr>
+          <td
+            rowspan="3"
+            class="width-min"
+            style="
+              width: 120px;
+              padding-top: -60px;
+              vertical-align: top;
+              border: none;
+            "
+          >
+            <div
+              class="pfp off-grid"
+              style="
+                width: 120px;
+                height: 120px;
+                border-radius: 60px;
+                border: 6px solid black;
+                overflow: hidden;
+                margin-top: -60px;
+              "
+              data-off-grid-logged="true"
+            >
+              <img
+                style="
+                  width: 100%;
+                  height: 115.14px;
+                  object-fit: cover;
+                  background-color: black !important;
+                  min-height: 50px;
+                "
+                alt=""
+                data-src="/static/banner/kyon_pfp.webp"
+                loading="lazy"
+                class="off-grid"
+                data-off-grid-logged="true"
+                src="./../../kyon_files/project_files/kyon_pfp.webp"
+              />
+            </div>
+          </td>
+          <td
+            colspan="2"
+            class="width-auto"
+            style="text-align: left; border: none"
+          >
+            <h1 class="title off-grid" data-off-grid-logged="true">
+              Video to Motion
+            </h1>
+            <span
+              class="subtitle off-grid"
+              style="font-size: 85%; color: gray; font-style: italic"
+              data-off-grid-logged="true"
+              >a project by
+              <a
+                href="https://kyon.dev/"
+                style="text-decoration: none; color: gray"
+                class="off-grid"
+                data-off-grid-logged="true"
+                >kyon</a
+              >
+            </span>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+
+    <!-- Project Date -->
+
+    <h2 id="d-motion-capture" class="off-grid" data-off-grid-logged="true">
+      3D motion capture
+    </h2>
+    <p class="off-grid" data-off-grid-logged="true">
+      i was working on
+      <a
+        href="https://kyon.dev/projects/waifu/oai-waifu"
+        class="off-grid"
+        data-off-grid-logged="true"
+        >oai-waifu</a
+      >
+      and needed animations.
+    </p>
+    <p class="off-grid" data-off-grid-logged="true">
+      hand animations are out of the scope of indie studios and i’m not an
+      animator. mocap gear avgs around
+      <a
+        href="https://www.rokoko.com/products/smartsuit-pro"
+        class="off-grid"
+        data-off-grid-logged="true"
+        >$6,000</a
+      >
+      and that’s just one suit.
+    </p>
+    <p class="off-grid" data-off-grid-logged="true">
+      so what about just downloading preset animations?
+    </p>
+    <p class="off-grid" data-off-grid-logged="true">
+      turns out there aren’t a lot of great anim libraries on the internet.
+    </p>
+    <p class="off-grid" data-off-grid-logged="true">
+      sure,
+      <a
+        href="https://www.mixamo.com/"
+        class="off-grid"
+        data-off-grid-logged="true"
+        >mixamo</a
+      >
+      is nice but it’s geared for gaming. log in, search “idle” or “walking” and
+      see how many results you get.
+    </p>
+    <p class="off-grid" data-off-grid-logged="true">
+      this sucks because basic animations like these are what we need the most.
+      so my thought process on this was quite simple: - the internet has
+      billions of videos - why not just extract motion out of those?
+    </p>
+    <p class="off-grid" data-off-grid-logged="true">
+      there are a few startups and corpos that offfer this service, but that’s
+      not how we do things around here.
+    </p>
+    <p class="off-grid" data-off-grid-logged="true">so lets build.</p>
+    <h3 id="section" class="off-grid" data-off-grid-logged="true">
+      <a
+        href="https://x.com/0xKyon/status/1844867996751364564"
+        class="off-grid"
+        data-off-grid-logged="true"
+        >2024-10-11</a
+      >
+    </h3>
+    <p class="off-grid" data-off-grid-logged="true">
+      SMPL -&gt; VRM bones: - axis-angle based rotations extracted per
+      quaternion - new animation file format (streaming support)
+    </p>
+    <p class="off-grid" data-off-grid-logged="true">
+      will open src when after cleanup
+    </p>
+    <figure class="off-grid" data-off-grid-logged="true">
+      <video
+        controls=""
+        data-src="https://video.twimg.com/ext_tw_video/1844867290241826817/pu/vid/avc1/852x720/upcxSEvUNfiYchV9.mp4?tag=12"
+        loading="lazy"
+        class="off-grid"
+        data-off-grid-logged="true"
+        style="min-height: 50px; height: 575.7px"
+        src="https://video.twimg.com/ext_tw_video/1844867290241826817/pu/vid/avc1/852x720/upcxSEvUNfiYchV9.mp4?tag=12"
+      >
+        <a
+          href="https://video.twimg.com/ext_tw_video/1844867290241826817/pu/vid/avc1/852x720/upcxSEvUNfiYchV9.mp4?tag=12"
+          >spent 2 days working on a motion template for waifu project, ended up
+          making a standalone tool that doesn’t exist yet?</a
+        >
+      </video>
+      <figcaption
+        aria-hidden="true"
+        class="off-grid"
+        data-off-grid-logged="true"
+      >
+        spent 2 days working on a motion template for waifu project, ended up
+        making a standalone tool that doesn’t exist yet?
+      </figcaption>
+    </figure>
+    <p class="off-grid" data-off-grid-logged="true">
+      will be adding facial expressions + hand (fingers) next
+    </p>
+    <h3 id="section-1" class="off-grid" data-off-grid-logged="true">
+      <a
+        href="https://x.com/0xKyon/status/1845159417911836685"
+        class="off-grid"
+        data-off-grid-logged="true"
+        >2024-10-12</a
+      >
+    </h3>
+    <p class="off-grid" data-off-grid-logged="true">
+      added hands, still needs lots of refinement will post vid soon
+    </p>
+    <h3 id="section-2" class="off-grid" data-off-grid-logged="true">
+      <a
+        href="https://x.com/0xKyon/status/1846335759558889624"
+        class="off-grid"
+        data-off-grid-logged="true"
+        >2024-10-15</a
+      >
+    </h3>
+    <figure class="off-grid" data-off-grid-logged="true">
+      <img
+        alt="audio only listening to @ineedtolocking’s stream while creating a debug view for waifu’s camera system"
+        data-src="https://pbs.twimg.com/media/GZ-AkYCb0AE1unm.jpg"
+        loading="lazy"
+        class="off-grid"
+        data-off-grid-logged="true"
+        style="min-height: 50px"
+      />
+      <figcaption
+        aria-hidden="true"
+        class="off-grid"
+        data-off-grid-logged="true"
+      >
+        audio only listening to
+        <span
+          class="citation off-grid"
+          data-cites="ineedtolocking"
+          data-off-grid-logged="true"
+          >@ineedtolocking</span
+        >’s stream while creating a debug view for waifu’s camera system
+      </figcaption>
+    </figure>
+    <p class="off-grid" data-off-grid-logged="true">
+      hand + fingers have been implemented, a lot more work to be done.
+    </p>
+    <p class="off-grid" data-off-grid-logged="true">next: facial expressions</p>
+    <p class="off-grid" data-off-grid-logged="true">
+      (this is me procrastinating from genshin shader work)
+    </p>
+    <h3 id="section-3" class="off-grid" data-off-grid-logged="true">
+      <a
+        href="https://x.com/0xKyon/status/1846364058943160322"
+        class="off-grid"
+        data-off-grid-logged="true"
+        >2024-10-16</a
+      >
+    </h3>
+    <p class="off-grid" data-off-grid-logged="true">
+      note: fps on source vid is synced to match waifu’s superior fps
+    </p>
+    <figure class="off-grid" data-off-grid-logged="true">
+      <video
+        controls=""
+        data-src="https://video.twimg.com/ext_tw_video/1846363725038845952/pu/vid/avc1/890x720/K-y0VhrYlFSlNRen.mp4?tag=12"
+        loading="lazy"
+        class="off-grid"
+        data-off-grid-logged="true"
+        style="min-height: 50px"
+      >
+        <a
+          href="https://video.twimg.com/ext_tw_video/1846363725038845952/pu/vid/avc1/890x720/K-y0VhrYlFSlNRen.mp4?tag=12"
+          >camera sync test, waifu will not move in 3d space as per source
+          video</a
+        >
+      </video>
+      <figcaption
+        aria-hidden="true"
+        class="off-grid"
+        data-off-grid-logged="true"
+      >
+        camera sync test, waifu will not move in 3d space as per source video
+      </figcaption>
+    </figure>
+    <h3 id="section-4" class="off-grid" data-off-grid-logged="true">
+      <a
+        href="https://x.com/0xKyon/status/1846372082269225197"
+        class="off-grid"
+        data-off-grid-logged="true"
+        >2024-10-16</a
+      >
+    </h3>
+    <figure class="off-grid" data-off-grid-logged="true">
+      <video
+        controls=""
+        data-src="https://video.twimg.com/ext_tw_video/1846371755683946496/pu/vid/avc1/890x720/wGEf8ERtjF359Ofo.mp4?tag=12"
+        loading="lazy"
+        class="off-grid"
+        data-off-grid-logged="true"
+        style="min-height: 50px"
+      >
+        <a
+          href="https://video.twimg.com/ext_tw_video/1846371755683946496/pu/vid/avc1/890x720/wGEf8ERtjF359Ofo.mp4?tag=12"
+          >yes</a
+        >
+      </video>
+      <figcaption
+        aria-hidden="true"
+        class="off-grid"
+        data-off-grid-logged="true"
+      >
+        yes
+      </figcaption>
+    </figure>
+    <p class="off-grid" data-off-grid-logged="true">
+      took me longer to crop, edit, add music to this than to generate this
+      output btw
+    </p>
+    <h3 id="section-5" class="off-grid" data-off-grid-logged="true">
+      <a
+        href="https://x.com/0xKyon/status/1848853873609646571"
+        class="off-grid"
+        data-off-grid-logged="true"
+        >2024-10-22</a
+      >
+    </h3>
+    <p class="off-grid" data-off-grid-logged="true">
+      (perfecting hand pos next)
+    </p>
+    <figure class="off-grid" data-off-grid-logged="true">
+      <video
+        controls=""
+        data-src="https://video.twimg.com/ext_tw_video/1848853826394329089/pu/vid/avc1/1080x1080/w9t8-uKbfvTDN_Fh.mp4?tag=14"
+        loading="lazy"
+        class="off-grid"
+        data-off-grid-logged="true"
+        style="min-height: 50px"
+      >
+        <a
+          href="https://video.twimg.com/ext_tw_video/1848853826394329089/pu/vid/avc1/1080x1080/w9t8-uKbfvTDN_Fh.mp4?tag=14"
+          >finger detection progress</a
+        >
+      </video>
+      <figcaption
+        aria-hidden="true"
+        class="off-grid"
+        data-off-grid-logged="true"
+      >
+        finger detection progress
+      </figcaption>
+    </figure>
+    <h3 id="section-6" class="off-grid" data-off-grid-logged="true">
+      <a
+        href="https://x.com/0xKyon/status/1852385743219413062"
+        class="off-grid"
+        data-off-grid-logged="true"
+        >2024-11-01</a
+      >
+    </h3>
+    <figure class="off-grid" data-off-grid-logged="true">
+      <video
+        controls=""
+        data-src="https://video.twimg.com/ext_tw_video/1852384354489790464/pu/vid/avc1/1338x1080/SZBrbXb3qCAcXdXS.mp4?tag=14"
+        loading="lazy"
+        class="off-grid"
+        data-off-grid-logged="true"
+        style="min-height: 50px"
+      >
+        <a
+          href="https://video.twimg.com/ext_tw_video/1852384354489790464/pu/vid/avc1/1338x1080/SZBrbXb3qCAcXdXS.mp4?tag=14"
+          >having some fun doing frontend</a
+        >
+      </video>
+      <figcaption
+        aria-hidden="true"
+        class="off-grid"
+        data-off-grid-logged="true"
+      >
+        having some fun doing frontend
+      </figcaption>
+    </figure>
+    <p class="off-grid" data-off-grid-logged="true">
+      no figma just rawdog design, i just place everything first and then try to
+      figure out if it makes sense. pixel perfect alignment once i’m happy with
+      the vibe
+    </p>
+
+    <script src="./../../kyon_files/project_files/index.js"></script>
+  </body>
+</html>

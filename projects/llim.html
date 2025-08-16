@@ -1,0 +1,552 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en" dir="ltr">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+    <meta name="generator" content="pandoc" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, user-scalable=yes"
+    />
+
+    <!-- Favicons with sizes -->
+    <link
+      rel="icon"
+      type="image/x-icon"
+      href="https://kyon.dev/static/favicon.ico"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="https://kyon.dev/static/favicon-16x16.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="https://kyon.dev/static/favicon-32x32.png"
+    />
+
+    <!-- Meta tags -->
+    <meta name="theme-color" content="#ffffff" />
+    <meta name="color-scheme" content="light dark" />
+
+    <!-- Open Graph tags -->
+    <meta property="og:site_name" content="" />
+    <meta
+      property="og:image"
+      content="https://kyon.dev/static/og//projects/llim/og.jpg"
+    />
+    <meta property="og:image:alt" content="LLIM - Large Language Improved" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:title" content="LLIM - Large Language Improved" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://kyon.dev/projects/llim" />
+
+    <!-- Twitter Card tags -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta
+      name="twitter:image"
+      content="https://kyon.dev/static/og//projects/llim/og.jpg"
+    />
+    <meta name="twitter:title" content="LLIM - Large Language Improved" />
+    <meta name="twitter:site" content="https://kyon.dev" />
+    <meta name="twitter:creator" content="@0xkyon" />
+
+    <!-- SEO -->
+    <title>LLIM - Large Language Improved</title>
+    <link rel="canonical" href="https://kyon.dev/projects/llim" />
+    <meta name="robots" content="index, follow" />
+    <meta name="googlebot" content="index, follow" />
+
+    <!-- PWA -->
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+    <meta name="apple-mobile-web-app-title" content="" />
+    <meta name="mobile-web-app-capable" content="yes" />
+    <meta name="application-name" content="" />
+
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="./../kyon_files/project_files/reset.css" />
+    <link rel="stylesheet" href="./../kyon_files/project_files/index.css" />
+
+    <!-- JSON-LD -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "WebPage",
+        "headline": "LLIM - Large Language Improved",
+        "name": "LLIM - Large Language Improved",
+        "url": "https://kyon.dev/projects/llim"
+      }
+    </script>
+  </head>
+
+  <body data-new-gr-c-s-check-loaded="14.1248.0" data-gr-ext-installed="">
+    <table class="header" style="border: none">
+      <tbody>
+        <tr>
+          <td
+            colspan="4"
+            class="banner"
+            style="
+              border: none;
+              height: 100px;
+              background-size: cover;
+              background-position: center;
+              background-image: url(&#39;/static/banner/banner.webp&#39;);
+            "
+          ></td>
+        </tr>
+        <tr>
+          <td
+            rowspan="3"
+            class="width-min"
+            style="
+              width: 120px;
+              padding-top: -60px;
+              vertical-align: top;
+              border: none;
+            "
+          >
+            <div
+              class="pfp off-grid"
+              style="
+                width: 120px;
+                height: 120px;
+                border-radius: 60px;
+                border: 6px solid black;
+                overflow: hidden;
+                margin-top: -60px;
+              "
+              data-off-grid-logged="true"
+            >
+              <img
+                style="
+                  width: 100%;
+                  height: 115.2px;
+                  object-fit: cover;
+                  background-color: black !important;
+                  min-height: 50px;
+                "
+                alt=""
+                data-src="/static/banner/kyon_pfp.webp"
+                loading="lazy"
+                class="off-grid"
+                data-off-grid-logged="true"
+                src="./../kyon_files/project_files/kyon_pfp.webp"
+              />
+            </div>
+          </td>
+          <td
+            colspan="2"
+            class="width-auto"
+            style="text-align: left; border: none"
+          >
+            <h1 class="title off-grid" data-off-grid-logged="true">
+              LLIM - Large Language Improved
+            </h1>
+            <span
+              class="subtitle off-grid"
+              style="font-size: 85%; color: gray; font-style: italic"
+              data-off-grid-logged="true"
+              >a project by
+              <a
+                href="https://kyon.dev/"
+                style="text-decoration: none; color: gray"
+                class="off-grid"
+                data-off-grid-logged="true"
+                >kyon</a
+              >
+            </span>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+
+    <!-- Project Date -->
+
+    <h2 id="tui-based-llm-chat" class="off-grid" data-off-grid-logged="true">
+      tui based llm chat
+    </h2>
+    <p class="off-grid" data-off-grid-logged="true">
+      i use llms <em class="off-grid" data-off-grid-logged="true">a lot</em> so
+      why not make it
+      <em class="off-grid" data-off-grid-logged="true">easier</em> to use?
+    </p>
+    <p class="off-grid" data-off-grid-logged="true">
+      building a textual multi-llm chat ui that with power user features
+    </p>
+    <h3 id="section" class="off-grid" data-off-grid-logged="true">
+      <a
+        href="https://x.com/0xKyon/status/1835766433651003738"
+        class="off-grid"
+        data-off-grid-logged="true"
+        >2024-09-16</a
+      >
+    </h3>
+    <figure class="off-grid" data-off-grid-logged="true">
+      <img
+        alt="you can just do things"
+        data-src="https://pbs.twimg.com/media/GXnz1ecagAAzwx_.jpg"
+        loading="lazy"
+        class="off-grid"
+        data-off-grid-logged="true"
+        style="min-height: 50px; height: 115.2px"
+        src="./../kyon_files/project_files/GXnz1ecagAAzwx_.jpg"
+      />
+      <figcaption
+        aria-hidden="true"
+        class="off-grid"
+        data-off-grid-logged="true"
+      >
+        you can just do things
+      </figcaption>
+    </figure>
+    <h3 id="section-1" class="off-grid" data-off-grid-logged="true">
+      <a
+        href="https://x.com/0xKyon/status/1835828489146310748"
+        class="off-grid"
+        data-off-grid-logged="true"
+        >2024-09-16</a
+      >
+    </h3>
+    <p class="off-grid" data-off-grid-logged="true">
+      getting details accurate in a tui is a pain
+    </p>
+    <h3 id="section-2" class="off-grid" data-off-grid-logged="true">
+      <a
+        href="https://x.com/0xKyon/status/1835843760238088216"
+        class="off-grid"
+        data-off-grid-logged="true"
+        >2024-09-17</a
+      >
+    </h3>
+    <figure class="off-grid" data-off-grid-logged="true">
+      <img
+        alt="no longer painful"
+        data-src="https://pbs.twimg.com/media/GXo5x_MbYAAGRTy.jpg"
+        loading="lazy"
+        class="off-grid"
+        data-off-grid-logged="true"
+        style="min-height: 50px; height: 364.8px"
+        src="./../kyon_files/project_files/GXo5x_MbYAAGRTy.jpg"
+      />
+      <figcaption
+        aria-hidden="true"
+        class="off-grid"
+        data-off-grid-logged="true"
+      >
+        no longer painful
+      </figcaption>
+    </figure>
+    <h3 id="section-3" class="off-grid" data-off-grid-logged="true">
+      <a
+        href="https://x.com/0xKyon/status/1835884260026363949"
+        class="off-grid"
+        data-off-grid-logged="true"
+        >2024-09-17</a
+      >
+    </h3>
+    <p class="off-grid" data-off-grid-logged="true">todo:</p>
+    <ul class="incremental off-grid" data-off-grid-logged="true">
+      <li class="off-grid" data-off-grid-logged="true">
+        multiple provider support (gpt, claude, gemini, local models)
+      </li>
+      <li class="off-grid" data-off-grid-logged="true">key bindings</li>
+      <li class="off-grid" data-off-grid-logged="true">visual editor mode</li>
+      <li class="off-grid" data-off-grid-logged="true">sqlite for storage</li>
+      <li class="off-grid" data-off-grid-logged="true">vector search + rag</li>
+      <li class="off-grid" data-off-grid-logged="true">theming</li>
+    </ul>
+    <h3 id="section-4" class="off-grid" data-off-grid-logged="true">
+      <a
+        href="https://x.com/0xKyon/status/1837272921133437275"
+        class="off-grid"
+        data-off-grid-logged="true"
+        >2024-09-20</a
+      >
+    </h3>
+    <figure class="off-grid" data-off-grid-logged="true">
+      <video
+        controls=""
+        data-src="https://video.twimg.com/ext_tw_video/1837272851185029123/pu/vid/avc1/1858x1080/VQy7nWL1OHdDVoFO.mp4?tag=14"
+        loading="lazy"
+        class="off-grid"
+        data-off-grid-logged="true"
+        style="min-height: 50px"
+      >
+        <a
+          href="https://video.twimg.com/ext_tw_video/1837272851185029123/pu/vid/avc1/1858x1080/VQy7nWL1OHdDVoFO.mp4?tag=14"
+          >added a splash screen</a
+        >
+      </video>
+      <figcaption
+        aria-hidden="true"
+        class="off-grid"
+        data-off-grid-logged="true"
+      >
+        added a splash screen
+      </figcaption>
+    </figure>
+    <p class="off-grid" data-off-grid-logged="true">
+      smol anim on ascii logo (0.5s) might cut it down to 0.3s
+    </p>
+    <h3 id="section-5" class="off-grid" data-off-grid-logged="true">
+      <a
+        href="https://x.com/0xKyon/status/1837290735479181446"
+        class="off-grid"
+        data-off-grid-logged="true"
+        >2024-09-21</a
+      >
+    </h3>
+    <figure class="off-grid" data-off-grid-logged="true">
+      <img
+        alt="removed sidebar, it’s cleaner"
+        data-src="https://pbs.twimg.com/media/GX9eKXYa0AArmSi.jpg"
+        loading="lazy"
+        class="off-grid"
+        data-off-grid-logged="true"
+        style="min-height: 50px"
+      />
+      <figcaption
+        aria-hidden="true"
+        class="off-grid"
+        data-off-grid-logged="true"
+      >
+        removed sidebar, it’s cleaner
+      </figcaption>
+    </figure>
+    <h3 id="section-6" class="off-grid" data-off-grid-logged="true">
+      <a
+        href="https://x.com/0xKyon/status/1837293633827131893"
+        class="off-grid"
+        data-off-grid-logged="true"
+        >2024-09-21</a
+      >
+    </h3>
+    <figure class="off-grid" data-off-grid-logged="true">
+      <img
+        alt="added code formatting + markdown support"
+        data-src="https://pbs.twimg.com/media/GX9gyGxaUAIofAe.jpg"
+        loading="lazy"
+        class="off-grid"
+        data-off-grid-logged="true"
+        style="min-height: 50px"
+      />
+      <figcaption
+        aria-hidden="true"
+        class="off-grid"
+        data-off-grid-logged="true"
+      >
+        added code formatting + markdown support
+      </figcaption>
+    </figure>
+    <p class="off-grid" data-off-grid-logged="true">
+      added code formatting + markdown support
+    </p>
+    <h3 id="section-7" class="off-grid" data-off-grid-logged="true">
+      <a
+        href="https://x.com/0xKyon/status/1837322518144897180"
+        class="off-grid"
+        data-off-grid-logged="true"
+        >2024-09-21</a
+      >
+    </h3>
+    <figure class="off-grid" data-off-grid-logged="true">
+      <video
+        controls=""
+        data-src="https://video.twimg.com/ext_tw_video/1837321785467076608/pu/vid/avc1/1920x1080/ru-vBwyzg6j6XccK.mp4?tag=14"
+        loading="lazy"
+        class="off-grid"
+        data-off-grid-logged="true"
+        style="min-height: 50px"
+      >
+        <a
+          href="https://video.twimg.com/ext_tw_video/1837321785467076608/pu/vid/avc1/1920x1080/ru-vBwyzg6j6XccK.mp4?tag=14"
+          >bro can you even center a div?</a
+        >
+      </video>
+      <figcaption
+        aria-hidden="true"
+        class="off-grid"
+        data-off-grid-logged="true"
+      >
+        bro can you even center a div?
+      </figcaption>
+    </figure>
+    <p class="off-grid" data-off-grid-logged="true">
+      made it fully responsive for fun
+    </p>
+    <h3 id="section-8" class="off-grid" data-off-grid-logged="true">
+      <a
+        href="https://x.com/0xKyon/status/1837477276843495626"
+        class="off-grid"
+        data-off-grid-logged="true"
+        >2024-09-21</a
+      >
+    </h3>
+    <figure class="off-grid" data-off-grid-logged="true">
+      <img
+        alt="which looks better?"
+        data-src="https://pbs.twimg.com/media/GYAHyXFb0AEcbZf.jpg"
+        loading="lazy"
+        class="off-grid"
+        data-off-grid-logged="true"
+        style="min-height: 50px"
+      />
+      <figcaption
+        aria-hidden="true"
+        class="off-grid"
+        data-off-grid-logged="true"
+      >
+        which looks better?
+      </figcaption>
+    </figure>
+    <figure class="off-grid" data-off-grid-logged="true">
+      <img
+        alt="which looks better?"
+        data-src="https://pbs.twimg.com/media/GYAHzDFb0AIsyAx.jpg"
+        loading="lazy"
+        class="off-grid"
+        data-off-grid-logged="true"
+        style="min-height: 50px"
+      />
+      <figcaption
+        aria-hidden="true"
+        class="off-grid"
+        data-off-grid-logged="true"
+      >
+        which looks better?
+      </figcaption>
+    </figure>
+    <h3 id="section-9" class="off-grid" data-off-grid-logged="true">
+      <a
+        href="https://x.com/0xKyon/status/1837582237757497407"
+        class="off-grid"
+        data-off-grid-logged="true"
+        >2024-09-21</a
+      >
+    </h3>
+    <p class="off-grid" data-off-grid-logged="true">
+      uses ascii thumbnail for display
+    </p>
+    <figure class="off-grid" data-off-grid-logged="true">
+      <img
+        alt="added img support"
+        data-src="https://pbs.twimg.com/media/GYBm7efasAAWBnF.jpg"
+        loading="lazy"
+        class="off-grid"
+        data-off-grid-logged="true"
+        style="min-height: 50px"
+      />
+      <figcaption
+        aria-hidden="true"
+        class="off-grid"
+        data-off-grid-logged="true"
+      >
+        added img support
+      </figcaption>
+    </figure>
+    <h3 id="section-10" class="off-grid" data-off-grid-logged="true">
+      <a
+        href="https://x.com/0xKyon/status/1837598880248353263"
+        class="off-grid"
+        data-off-grid-logged="true"
+        >2024-09-21</a
+      >
+    </h3>
+    <p class="off-grid" data-off-grid-logged="true">
+      send multiple msgs before letting model respond
+    </p>
+    <figure class="off-grid" data-off-grid-logged="true">
+      <img
+        alt="ctrl+y for yap mode"
+        data-src="https://pbs.twimg.com/media/GYB2O0nb0AAtM8E.jpg"
+        loading="lazy"
+        class="off-grid"
+        data-off-grid-logged="true"
+        style="min-height: 50px"
+      />
+      <figcaption
+        aria-hidden="true"
+        class="off-grid"
+        data-off-grid-logged="true"
+      >
+        ctrl+y for yap mode
+      </figcaption>
+    </figure>
+    <h3 id="section-11" class="off-grid" data-off-grid-logged="true">
+      <a
+        href="https://x.com/0xKyon/status/1837608856710795457"
+        class="off-grid"
+        data-off-grid-logged="true"
+        >2024-09-21</a
+      >
+    </h3>
+    <figure class="off-grid" data-off-grid-logged="true">
+      <img
+        alt="++attachment support, prepping for RAG"
+        data-src="https://pbs.twimg.com/media/GYB_Lw2bQAA36qD.jpg"
+        loading="lazy"
+        class="off-grid"
+        data-off-grid-logged="true"
+        style="min-height: 50px"
+      />
+      <figcaption
+        aria-hidden="true"
+        class="off-grid"
+        data-off-grid-logged="true"
+      >
+        ++attachment support, prepping for RAG
+      </figcaption>
+    </figure>
+    <p class="off-grid" data-off-grid-logged="true">
+      not sure about visuals for attachments yet, using table ui atm
+    </p>
+    <h3 id="section-12" class="off-grid" data-off-grid-logged="true">
+      <a
+        href="https://x.com/0xKyon/status/1837642311490326738"
+        class="off-grid"
+        data-off-grid-logged="true"
+        >2024-09-21</a
+      >
+    </h3>
+    <figure class="off-grid" data-off-grid-logged="true">
+      <img
+        alt="every few runs i check how it looks against other native tuis"
+        data-src="https://pbs.twimg.com/media/GYCd5QubYAAW54V.jpg"
+        loading="lazy"
+        class="off-grid"
+        data-off-grid-logged="true"
+        style="min-height: 50px"
+      />
+      <figcaption
+        aria-hidden="true"
+        class="off-grid"
+        data-off-grid-logged="true"
+      >
+        every few runs i check how it looks against other native tuis
+      </figcaption>
+    </figure>
+    <h3 id="section-13" class="off-grid" data-off-grid-logged="true">
+      <a
+        href="https://x.com/0xKyon/status/1839305170121011454"
+        class="off-grid"
+        data-off-grid-logged="true"
+        >2024-09-26</a
+      >
+    </h3>
+    <p class="off-grid" data-off-grid-logged="true">
+      haven’t abandoned the llim project, this just takes precedence bcs of oai
+      rls schedule
+    </p>
+    <p class="off-grid" data-off-grid-logged="true">
+      maybe i’ll continue with this project someday?
+    </p>
+
+    <script src="./../kyon_files/project_files/index.js"></script>
+  </body>
+</html>
